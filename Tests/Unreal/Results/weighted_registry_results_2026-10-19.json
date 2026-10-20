@@ -1,0 +1,83 @@
+{
+  "weighted_matches": [
+    [
+      2,
+      2,
+      true,
+      0.0
+    ],
+    [
+      3,
+      2,
+      true,
+      1.0
+    ],
+    [
+      3,
+      3,
+      true,
+      1.4142135623730951
+    ],
+    [
+      8,
+      5,
+      true,
+      7.242640687119285
+    ],
+    [
+      10,
+      5,
+      true,
+      8.921151989096867
+    ],
+    [
+      18,
+      18,
+      true,
+      23.16582489435278
+    ],
+    [
+      0,
+      19,
+      true,
+      17.35702260395516
+    ],
+    [
+      9,
+      6,
+      true,
+      7.421151989096866
+    ],
+    [
+      9,
+      4,
+      false,
+      0.0
+    ],
+    [
+      15,
+      6,
+      true,
+      11.421151989096863
+    ],
+    [
+      19,
+      0,
+      true,
+      17.82842712474619
+    ],
+    [
+      4,
+      15,
+      true,
+      13.357022603955159
+    ]
+  ],
+  "registry": [
+    "eight independent slots",
+    "repeated refresh does not duplicate",
+    "identity lookup finds each slot",
+    "same-job registration idempotent",
+    "destroyed target removed"
+  ]
+}

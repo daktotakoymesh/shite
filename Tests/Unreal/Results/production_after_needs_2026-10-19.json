@@ -1,0 +1,24 @@
+{
+  "passed": [
+    "Production structure appears automatically once in the building menu",
+    "P-shaped 3x3 table blocks seven cells while preserving entrance and inner work tile",
+    "Unfinished workstations cannot produce resources",
+    "Only a stationary worker inside can produce, and interruption preserves partial labour",
+    "Full batches respect output capacity and depleted output is replenished in the same pile",
+    "Disabled production and invalid zero-work or zero-output recipes do not generate free resources",
+    "Generic output settings support another resource without mixing existing contents",
+    "Destroying a workstation leaves already produced supplies intact",
+    "Colonist delivers construction cost and builds the workbench",
+    "Finished workstation is discovered and autonomously fills its output buffer",
+    "Full output releases the producer instead of continuing free work",
+    "Periodic discovery keeps one waiting production slot without duplicates",
+    "Removing stock wakes the waiting production job",
+    "Production toggle disables and releases its active job",
+    "Produced supplies are hauled to an unpaid construction site",
+    "Production sustains construction with no starting resource piles",
+    "Construction consumes exactly its cost from workstation output"
+  ],
+  "failed": [],
+  "current": null,
+  "status": "passed"
+}

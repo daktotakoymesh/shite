@@ -1,0 +1,31 @@
+{
+  "passed": [
+    "A fresh Play session starts at normal speed",
+    "Speed cycles through 1x, 2x, 4x and 8x and returns to normal",
+    "Speed setter clamps unsupported rates to the supported range",
+    "New output is stored on the front-right occupied tile beside the entrance",
+    "Worker starts producing for the speed measurement",
+    "Measure production at 1x",
+    "Measure production at 4x",
+    "Global 4x speed accelerates actual production labour approximately fourfold",
+    "Measure movement at 1x",
+    "Measure movement at 4x",
+    "Global 4x speed accelerates actual colonist movement approximately fourfold",
+    "Production, hauling, and construction finish correctly at 8x",
+    "Fast construction still consumes exactly the required resources",
+    "Returning to normal restores the global rate"
+  ],
+  "failed": [],
+  "measurements": {
+    "production_labour_per_real_second": [
+      1.0000002086162567,
+      4.000000834465027
+    ],
+    "movement_units_per_real_second": [
+      101.62606471655424,
+      406.5040650299738
+    ]
+  },
+  "current": null,
+  "status": "passed"
+}

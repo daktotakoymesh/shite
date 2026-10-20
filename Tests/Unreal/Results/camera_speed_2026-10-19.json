@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "Camera movement remains the same at 1x and 8x",
+    "Camera effective tick time stays normal at all four game speeds"
+  ],
+  "failed": [],
+  "measurements": {
+    "camera_units_per_real_second": [
+      1200.0004649162292,
+      1200.0004649162292
+    ]
+  },
+  "status": "passed"
+}

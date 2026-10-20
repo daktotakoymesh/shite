@@ -1,0 +1,95 @@
+{
+  "shared_site": {
+    "passed": [
+      "Shared delivery claims split a five-unit cost into 3+2 and release on cancellation",
+      "A one-unit remainder never recruits a redundant second hauler",
+      "Configured site worker limit is respected and repeated refresh does not duplicate slots",
+      "Destroying a reserved hauler immediately frees its quantity claim",
+      "Partial pickup reduces the claim to actual cargo without losing materials",
+      "Two builders perform labour on the same building simultaneously",
+      "Both builders add labour to the same shared progress total",
+      "Cooperative construction completes exactly once",
+      "All builders release their claims after shared completion",
+      "Two colonists carry materials to the same site concurrently",
+      "Concurrent hauling funds and completes the building",
+      "Concurrent deliveries consume exactly five materials with no excess cargo",
+      "Both haulers carry before one is manually interrupted",
+      "Manual interruption releases material and work-position reservations",
+      "Remaining and recovered deliveries complete the shared site",
+      "Interrupted concurrent delivery preserves every material"
+    ],
+    "failed": [],
+    "current": null,
+    "status": "passed"
+  },
+  "construction": {
+    "passed": [
+      "Unfinished footprint stays walkable but rejects overlapping placement",
+      "Partial progress survives release and negative work cannot erase it",
+      "A worker cannot build from inside the footprint",
+      "Safe completion commits once",
+      "Solid completion waits for a pawn inside and succeeds after it leaves",
+      "Completion refuses a pawn departing an occupied footprint",
+      "Road may finish under a pawn and remains walkable",
+      "Closing the only exit is deferred until another exit opens",
+      "Unreachable sites are skipped and become assignable after access opens",
+      "Higher job priority wins over travel distance",
+      "Equal priority chooses least travel time",
+      "Two workers reserve different jobs",
+      "Destroyed worker releases reservation for another worker",
+      "Destroyed construction target cancels job and releases worker",
+      "Repeated discovery does not duplicate site jobs"
+    ],
+    "failed": []
+  },
+  "materials": {
+    "passed": [
+      "Direct work and completion cannot bypass unpaid material cost",
+      "Pickup respects capacity and delivery conserves exact quantities",
+      "Competing pickups cannot duplicate the last unit of a pile",
+      "A building-material job ignores food piles",
+      "No supplies are collected for an unreachable delivery position",
+      "A pile on a blocked tile remains collectible from an accessible neighbour",
+      "Available partial supplies are delivered",
+      "A shortage leaves the site unfinished without free labour or materials",
+      "New supplies wake waiting construction and finish the site",
+      "Multiple trips consume precisely the building cost",
+      "Two workers complete material-funded buildings from shared supplies",
+      "Concurrent hauling conserves supplies and leaves no stranded cargo",
+      "Worker begins carrying a delivery",
+      "Manual movement drops cargo and releases delivery job",
+      "Manual interruption preserves every unit of cargo",
+      "Dropped supplies are collected again and construction resumes",
+      "Worker carries supplies before target destruction",
+      "Destroyed site releases cargo safely",
+      "Target destruction preserves undelivered supplies",
+      "Temporary worker carries supplies before destruction",
+      "Destroying a carrier drops its inventory into the world",
+      "Another worker recovers the dropped cargo and completes the site"
+    ],
+    "failed": [],
+    "started": 1792403316.8694944,
+    "current": null,
+    "finished": 1792403359.7825284,
+    "status": "passed"
+  },
+  "work_positions": {
+    "passed": [
+      "Shared sole work tile is claimed atomically, released, and reused",
+      "Occupied tiles and incoming movement tiles are excluded",
+      "Destroyed workers leave no stale work-tile reservation",
+      "Nearby jobs choose different work positions when alternatives exist",
+      "Travel re-evaluation replaces a newly occupied work position",
+      "Both sites finish when only one shared work position exists",
+      "Completed work releases all tile reservations",
+      "Two builders work simultaneously from different positions",
+      "Both simultaneous construction jobs complete",
+      "Worker reserves its destination before arrival",
+      "Occupied destination at arrival triggers a different work position",
+      "Construction finishes after arrival reselects a work position"
+    ],
+    "failed": [],
+    "current": null,
+    "status": "passed"
+  }
+}

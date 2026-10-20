@@ -1,0 +1,40 @@
+{
+  "static": {
+    "passed": [
+      "Meal transfers exactly one food and restores nutrition over time",
+      "Building materials cannot be eaten; no food yields no eating destination",
+      "Colonist can sleep on current ground tile",
+      "Completed bed provides twofold recovery from its free use tile",
+      "Table doubles eating recovery and consumes actual carried food",
+      "Unfinished furniture gives no use destination or bonus",
+      "Blocked bed falls back to ground",
+      "Destroyed furniture loses bonus without breaking recovery",
+      "Another colonist occupying the bed use tile prevents selection",
+      "Storage filter refuses existing stock and in-flight claims",
+      "Personal need jobs cannot be taken by another colonist",
+      "Need activation uses hysteresis and completes at target without overshoot",
+      "Cancel before eating returns carried food to inventory",
+      "Consumed meal progress survives interruption without consuming twice",
+      "Inspector controls change storage filter and show both needs",
+      "Compact food kitchen produces real food at the configured output position",
+      "All usable new buildings appear once; abstract furniture definition is hidden",
+      "Negative work cannot drain needs and eating cannot overwrite other cargo",
+      "Needs decay during manual control and freeze only when explicitly disabled",
+      "Food resource stacks have a distinct green material"
+    ],
+    "failed": []
+  },
+  "live": {
+    "passed": [
+      "Hungry colonist with no food operates the garden and then eats its real output",
+      "Recovered colonist resumes food production",
+      "Tired colonist autonomously reaches the bed and recovers",
+      "Sleeping finishes and releases work-position reservation",
+      "Two colonists eat concurrently at distinct table places",
+      "Concurrent eating consumed exactly four food, without duplication",
+      "Hungry colonist withdraws food from solid storage and eats without a table"
+    ],
+    "failed": []
+  },
+  "total_passed": 27
+}

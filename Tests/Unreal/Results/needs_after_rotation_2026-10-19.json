@@ -1,0 +1,12 @@
+{
+  "passed": [
+    "Hungry colonist with no food operates the garden and then eats its real output",
+    "Recovered colonist resumes food production",
+    "Tired colonist autonomously reaches the bed and recovers",
+    "Sleeping finishes and releases work-position reservation",
+    "Two colonists eat concurrently at distinct table places",
+    "Concurrent eating consumed exactly four food, without duplication",
+    "Hungry colonist withdraws food from solid storage and eats without a table"
+  ],
+  "failed": []
+}

@@ -1,0 +1,9 @@
+{
+  "roads": 100,
+  "workers": 4,
+  "initial_jobs": 800,
+  "completed": 100,
+  "elapsed": 73.37260794639587,
+  "remaining_jobs": 0,
+  "passed": true
+}

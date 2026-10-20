@@ -47,8 +47,7 @@ or many simultaneous requests may eventually need a priority queue or searches
 spread over multiple frames. Call on a new destination or necessary reroute,
 not every Tick.
 
-The function only computes a route. Colonist movement, road speed changes while
-following it, and rerouting after new construction are the next integration step.
+Colonist movement consumes this route, applies terrain speed during each step, and reroutes when construction changes walkability. Job selection uses the scoped BuildTravelField/GetTravelCost pair to compare many destinations without repeating A* for each candidate. The travel field uses the same step-cost and neighbor functions.
 
 ## Verification
 
@@ -62,7 +61,7 @@ To rerun, start PIE or Simulate in the existing grid level, then run this in
 Unreal's Cmd console (adjust the project path):
 
 ```text
-py "D:/shite/Tests/Unreal/test_astar.py"
+py "D:/shite-autonomous/Tests/Unreal/test_astar.py"
 ```
 
 The script borrows a tile-data template from the play world, temporarily supplies

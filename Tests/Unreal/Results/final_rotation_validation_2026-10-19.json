@@ -1,0 +1,30 @@
+{
+  "rotation_checks": 13,
+  "invalid_input_checks": [
+    [
+      0.0,
+      100.0,
+      "<Struct 'Vector2D' (0x000002B4F2359120) {x: 2.000000, y: 2.000000}>",
+      "rejected"
+    ],
+    [
+      -100.0,
+      100.0,
+      "<Struct 'Vector2D' (0x000002B4F23592A0) {x: 2.000000, y: 2.000000}>",
+      "rejected"
+    ],
+    [
+      100.0,
+      0.0,
+      "<Struct 'Vector2D' (0x000002B4F23592E0) {x: 2.000000, y: 2.000000}>",
+      "rejected"
+    ],
+    [
+      100.0,
+      100.0,
+      "<Struct 'Vector2D' (0x000002B4F2359320) {x: -1.000000, y: 2.000000}>",
+      "rejected"
+    ]
+  ],
+  "normal_diagonal_cost": 1.4142135623730951
+}

@@ -1,0 +1,496 @@
+{
+  "pathfinding": {
+    "passed": [
+      {
+        "name": "diagonal open grid",
+        "success": true,
+        "path_length": 4,
+        "travel_time": 4.242640687119286
+      },
+      {
+        "name": "four-direction open grid",
+        "success": true,
+        "path_length": 7,
+        "travel_time": 6.0
+      },
+      {
+        "name": "already at goal",
+        "success": true,
+        "path_length": 1,
+        "travel_time": 0.0
+      },
+      {
+        "name": "goal out of bounds",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "start out of bounds",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "fractional coordinate rejected",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "empty grid",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "zero movement speed",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "negative movement speed",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "zero tile size",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "zero terrain speed",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "blocked origin",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "blocked goal",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "one blocked side forbids shortcut",
+        "success": true,
+        "path_length": 3,
+        "travel_time": 2.0
+      },
+      {
+        "name": "two blocked sides unreachable",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "full wall unreachable",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "wall with single gap",
+        "success": true,
+        "path_length": 10,
+        "travel_time": 11.071067811865476
+      },
+      {
+        "name": "faster road detour selected",
+        "success": true,
+        "path_length": 9,
+        "travel_time": 6.3570226039551585
+      },
+      {
+        "name": "four-direction road detour",
+        "success": true,
+        "path_length": 11,
+        "travel_time": 5.5
+      },
+      {
+        "name": "slower roads avoided",
+        "success": true,
+        "path_length": 9,
+        "travel_time": 8.0
+      },
+      {
+        "name": "ground faster than road",
+        "success": true,
+        "path_length": 9,
+        "travel_time": 4.0
+      },
+      {
+        "name": "tile size and movement speed scaling",
+        "success": true,
+        "path_length": 9,
+        "travel_time": 2.6487594183146492
+      },
+      {
+        "name": "half ground half road transition",
+        "success": true,
+        "path_length": 2,
+        "travel_time": 0.8333333333333333
+      },
+      {
+        "name": "repeated search after failure",
+        "success": true,
+        "path_length": 4,
+        "travel_time": 4.242640687119286
+      },
+      {
+        "name": "random map 0",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 1",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 2",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 11.999999999999996
+      },
+      {
+        "name": "random map 3",
+        "success": true,
+        "path_length": 15,
+        "travel_time": 17.922219439362063
+      },
+      {
+        "name": "random map 4",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 5",
+        "success": true,
+        "path_length": 15,
+        "travel_time": 12.299831645537221
+      },
+      {
+        "name": "random map 6",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 7",
+        "success": true,
+        "path_length": 16,
+        "travel_time": 14.43790283299492
+      },
+      {
+        "name": "random map 8",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 13.333333333333332
+      },
+      {
+        "name": "random map 9",
+        "success": true,
+        "path_length": 14,
+        "travel_time": 17.44795203775868
+      },
+      {
+        "name": "random map 10",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 15.333333333333332
+      },
+      {
+        "name": "random map 11",
+        "success": true,
+        "path_length": 15,
+        "travel_time": 10.966498312203887
+      },
+      {
+        "name": "random map 12",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 13",
+        "success": true,
+        "path_length": 16,
+        "travel_time": 13.633164978870553
+      },
+      {
+        "name": "random map 14",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 11.333333333333332
+      },
+      {
+        "name": "random map 15",
+        "success": true,
+        "path_length": 14,
+        "travel_time": 16.371028960835602
+      },
+      {
+        "name": "random map 16",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 15.333333333333334
+      },
+      {
+        "name": "random map 17",
+        "success": true,
+        "path_length": 18,
+        "travel_time": 12.633164978870553
+      },
+      {
+        "name": "random map 18",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 20.692307692307693
+      },
+      {
+        "name": "random map 19",
+        "success": true,
+        "path_length": 13,
+        "travel_time": 13.071067811865476
+      },
+      {
+        "name": "random map 20",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 12.000000000000002
+      },
+      {
+        "name": "random map 21",
+        "success": true,
+        "path_length": 14,
+        "travel_time": 16.371028960835602
+      },
+      {
+        "name": "random map 22",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 23",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 24",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 25",
+        "success": true,
+        "path_length": 13,
+        "travel_time": 12.002032218136627
+      },
+      {
+        "name": "random map 26",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 12.666666666666666
+      },
+      {
+        "name": "random map 27",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      },
+      {
+        "name": "random map 28",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 14.666666666666668
+      },
+      {
+        "name": "random map 29",
+        "success": true,
+        "path_length": 16,
+        "travel_time": 11.161760458079524
+      },
+      {
+        "name": "random map 30",
+        "success": true,
+        "path_length": 19,
+        "travel_time": 19.076923076923077
+      },
+      {
+        "name": "random map 31",
+        "success": true,
+        "path_length": 16,
+        "travel_time": 14.035533905932738
+      },
+      {
+        "name": "current map size 20x20",
+        "success": true,
+        "path_length": 20,
+        "travel_time": 26.870057685088817
+      },
+      {
+        "name": "current map size cardinal",
+        "success": true,
+        "path_length": 39,
+        "travel_time": 38.0
+      },
+      {
+        "name": "20x20 exhausted frontier",
+        "success": false,
+        "path_length": 0,
+        "travel_time": 0.0
+      }
+    ],
+    "failed": [],
+    "pass_count": 59
+  },
+  "registration": {
+    "passed": [
+      "null job rejected without changing registry",
+      "missing target rejected",
+      "None job key rejected",
+      "foreign assigned ID rejected",
+      "preview building rejected",
+      "completed building rejected",
+      "base job fallback rejected",
+      "non-building target rejected",
+      "new construction job gets ID 1 and Available state",
+      "same-object registration is idempotent",
+      "duplicate reuses existing Waiting job",
+      "duplicate reuses existing Available job",
+      "duplicate reuses existing Reserved job",
+      "duplicate reuses existing InProgress job",
+      "different key on same target is distinct",
+      "same key on different target is distinct",
+      "Completed entries and null entries do not block a new job",
+      "Cancelled entries and null entries do not block a new job",
+      "Failed entries and null entries do not block a new job",
+      "rejection after success does not leak previous return object"
+    ],
+    "failed": []
+  },
+  "construction": {
+    "passed": [
+      "Unfinished footprint stays walkable but rejects overlapping placement",
+      "Partial progress survives release and negative work cannot erase it",
+      "A worker cannot build from inside the footprint",
+      "Safe completion commits once",
+      "Solid completion waits for a pawn inside and succeeds after it leaves",
+      "Completion refuses a pawn departing an occupied footprint",
+      "Road may finish under a pawn and remains walkable",
+      "Closing the only exit is deferred until another exit opens",
+      "Unreachable sites are skipped and become assignable after access opens",
+      "Higher job priority wins over travel distance",
+      "Equal priority chooses least travel time",
+      "Two workers reserve different jobs",
+      "Destroyed worker releases reservation for another worker",
+      "Destroyed construction target cancels job and releases worker",
+      "Repeated discovery does not duplicate site jobs"
+    ],
+    "failed": []
+  },
+  "labourRuntime": {
+    "passed": [
+      "Worker completes road and solid building autonomously",
+      "Completed job leaves worker available",
+      "Two workers hold distinct live reservations",
+      "Two autonomous workers finish a shared job queue",
+      "Worker begins travelling to a construction job",
+      "Manual command releases construction reservation",
+      "Old job cancellation does not cancel newer manual movement",
+      "Manual movement reaches its requested destination",
+      "Worker resumes construction after manual movement",
+      "Worker starts adding construction labour",
+      "Manual movement interrupts active labour",
+      "Interrupted work preserves accumulated labour",
+      "Interrupted building is eventually resumed and completed",
+      "Worker reserves site before target destruction",
+      "Destroyed target releases travelling worker",
+      "Destroyed target job is cancelled",
+      "Worker has a multi-step path before obstacle insertion",
+      "Worker replans around a new obstacle and finishes",
+      "Temporary worker reserves a site",
+      "Surviving worker recovers abandoned job and completes it"
+    ],
+    "failed": [],
+    "started": 1792376694.745413,
+    "current": null,
+    "finished": 1792376778.2709467,
+    "status": "passed"
+  },
+  "materialsRuntime": {
+    "passed": [
+      "Direct work and completion cannot bypass unpaid material cost",
+      "Pickup respects capacity and delivery conserves exact quantities",
+      "Competing pickups cannot duplicate the last unit of a pile",
+      "A building-material job ignores food piles",
+      "No supplies are collected for an unreachable delivery position",
+      "A pile on a blocked tile remains collectible from an accessible neighbour",
+      "Available partial supplies are delivered",
+      "A shortage leaves the site unfinished without free labour or materials",
+      "New supplies wake waiting construction and finish the site",
+      "Multiple trips consume precisely the building cost",
+      "Two workers complete material-funded buildings from shared supplies",
+      "Concurrent hauling conserves supplies and leaves no stranded cargo",
+      "Worker begins carrying a delivery",
+      "Manual movement drops cargo and releases delivery job",
+      "Manual interruption preserves every unit of cargo",
+      "Dropped supplies are collected again and construction resumes",
+      "Worker carries supplies before target destruction",
+      "Destroyed site releases cargo safely",
+      "Target destruction preserves undelivered supplies",
+      "Temporary worker carries supplies before destruction",
+      "Destroying a carrier drops its inventory into the world",
+      "Another worker recovers the dropped cargo and completes the site"
+    ],
+    "failed": [],
+    "started": 1792376893.1989794,
+    "current": null,
+    "finished": 1792376936.8974626,
+    "status": "passed"
+  },
+  "totalPassed": 136,
+  "project": "D:/shite-autonomous",
+  "originalSourceHashesVerified": 119,
+  "scope": "Actual Blueprint execution and PIE; no packaged-build claim.",
+  "freshEditorSmoke": {
+    "status": "passed",
+    "initialSupplies": 60,
+    "siteCosts": [
+      1,
+      6
+    ],
+    "remainingPiles": 53,
+    "delivered": 7,
+    "carried": 0,
+    "completedSites": 2
+  },
+  "freshLoad": {
+    "project": "D:/shite-autonomous/shite.uproject",
+    "map": "<Object '/Game/Untitled.Untitled' (0x00000284915A0000) Class 'World'>",
+    "workers": 2,
+    "materials": 60,
+    "compiledAfterReopen": 11
+  },
+  "startupAfterSecondReopen": {
+    "map": "<Object '/Game/Untitled.Untitled' (0x000001DAE8843800) Class 'World'>",
+    "workers": 2,
+    "materials": 60,
+    "status": "passed"
+  }
+}

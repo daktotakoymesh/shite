@@ -1,0 +1,263 @@
+{
+  "road_queue": {
+    "roads": 100,
+    "workers": 4,
+    "initial_jobs": 800,
+    "completed": 100,
+    "elapsed": 73.37260794639587,
+    "remaining_jobs": 0,
+    "passed": true
+  },
+  "rotation": [
+    "BP_Road four rotations: shape, mesh, interaction and output offsets",
+    "BP_Building_Dummy2x2 four rotations: shape, mesh, interaction and output offsets",
+    "BP_ProductionStation four rotations: shape, mesh, interaction and output offsets",
+    "BP_FoodGarden four rotations: shape, mesh, interaction and output offsets",
+    "BP_FoodKitchen four rotations: shape, mesh, interaction and output offsets",
+    "BP_Bed four rotations: shape, mesh, interaction and output offsets",
+    "BP_DiningTable four rotations: shape, mesh, interaction and output offsets",
+    "BP_Stockpile four rotations: shape, mesh, interaction and output offsets",
+    "BP_Wall four rotations: shape, mesh, interaction and output offsets",
+    "No-ghost rotation safe",
+    "Orientation persists across new placement",
+    "Rotated edge validation",
+    "Wall construction and path detour"
+  ],
+  "rotated_operation": [
+    "BP_ProductionStation operates after 0 degree placement",
+    "BP_FoodGarden operates after 0 degree placement",
+    "BP_FoodKitchen operates after 0 degree placement",
+    "BP_Bed operates after 0 degree placement",
+    "BP_DiningTable operates after 0 degree placement",
+    "BP_Stockpile operates after 0 degree placement",
+    "BP_ProductionStation operates after 90 degree placement",
+    "BP_FoodGarden operates after 90 degree placement",
+    "BP_FoodKitchen operates after 90 degree placement",
+    "BP_Bed operates after 90 degree placement",
+    "BP_DiningTable operates after 90 degree placement",
+    "BP_Stockpile operates after 90 degree placement",
+    "BP_ProductionStation operates after 180 degree placement",
+    "BP_FoodGarden operates after 180 degree placement",
+    "BP_FoodKitchen operates after 180 degree placement",
+    "BP_Bed operates after 180 degree placement",
+    "BP_DiningTable operates after 180 degree placement",
+    "BP_Stockpile operates after 180 degree placement",
+    "BP_ProductionStation operates after 270 degree placement",
+    "BP_FoodGarden operates after 270 degree placement",
+    "BP_FoodKitchen operates after 270 degree placement",
+    "BP_Bed operates after 270 degree placement",
+    "BP_DiningTable operates after 270 degree placement",
+    "BP_Stockpile operates after 270 degree placement",
+    "Wall appears exactly once in automatic menu"
+  ],
+  "production": {
+    "passed": [
+      "Production structure appears automatically once in the building menu",
+      "P-shaped 3x3 table blocks seven cells while preserving entrance and inner work tile",
+      "Unfinished workstations cannot produce resources",
+      "Only a stationary worker inside can produce, and interruption preserves partial labour",
+      "Full batches respect output capacity and depleted output is replenished in the same pile",
+      "Disabled production and invalid zero-work or zero-output recipes do not generate free resources",
+      "Generic output settings support another resource without mixing existing contents",
+      "Destroying a workstation leaves already produced supplies intact",
+      "Colonist delivers construction cost and builds the workbench",
+      "Finished workstation is discovered and autonomously fills its output buffer",
+      "Full output releases the producer instead of continuing free work",
+      "Periodic discovery keeps one waiting production slot without duplicates",
+      "Removing stock wakes the waiting production job",
+      "Production toggle disables and releases its active job",
+      "Produced supplies are hauled to an unpaid construction site",
+      "Production sustains construction with no starting resource piles",
+      "Construction consumes exactly its cost from workstation output"
+    ],
+    "failed": [],
+    "current": null,
+    "status": "passed"
+  },
+  "storage": {
+    "passed": [
+      "Solid 2x2 storage provides eight exterior access tiles",
+      "Empty storage owns one real reusable inventory pile",
+      "Storage worker slots are deduplicated",
+      "Two haulers reserve 3+2 against five free storage slots",
+      "Concurrent pickup preserves inventory and destination capacity",
+      "Separate edge positions deposit exactly to capacity",
+      "Full storage waits instead of taking excess inventory",
+      "Storage inspection shows actual stored amount and capacity",
+      "Storage becomes available again when builders withdraw supplies",
+      "Storage hauling does not transfer between shelves",
+      "Changing the filter cannot mix a different resource into existing stock",
+      "An empty shelf can accept its newly configured resource",
+      "Disabling a shelf rejects in-flight deposits without losing carried resources",
+      "Generic food storage uses the same hauling and inventory system",
+      "Cancelled storage hauling releases its capacity claim",
+      "Autonomous workers haul loose resources into storage",
+      "Autonomous storage hauling conserves all nine resources",
+      "Builders withdraw from storage and finish a construction site",
+      "Construction consumes exactly six stored resources",
+      "Workers collect workstation output and refill the stockpile",
+      "Production output feeds storage through autonomous hauling",
+      "Colonists receive distinct readable names",
+      "Click selection displays colonist identity, job and real stats",
+      "Selected stack quantities refresh as inventory changes",
+      "Clicking any storage footprint cell shows storage inspection",
+      "Unfinished multi-tile buildings show construction status and requirements",
+      "Destroyed selections return safely to inspection help",
+      "Clicking empty ground clears inspection"
+    ],
+    "failed": [],
+    "current": null,
+    "status": "passed"
+  },
+  "needs_static": {
+    "passed": [
+      "Meal transfers exactly one food and restores nutrition over time",
+      "Building materials cannot be eaten; no food yields no eating destination",
+      "Colonist can sleep on current ground tile",
+      "Completed bed provides twofold recovery from its free use tile",
+      "Table doubles eating recovery and consumes actual carried food",
+      "Unfinished furniture gives no use destination or bonus",
+      "Blocked bed falls back to ground",
+      "Destroyed furniture loses bonus without breaking recovery",
+      "Another colonist occupying the bed use tile prevents selection",
+      "Storage filter refuses existing stock and in-flight claims",
+      "Personal need jobs cannot be taken by another colonist",
+      "Need activation uses hysteresis and completes at target without overshoot",
+      "Cancel before eating returns carried food to inventory",
+      "Consumed meal progress survives interruption without consuming twice",
+      "Inspector controls change storage filter and show both needs",
+      "Compact food kitchen produces real food at the configured output position",
+      "All usable new buildings appear once; abstract furniture definition is hidden",
+      "Negative work cannot drain needs and eating cannot overwrite other cargo",
+      "Needs decay during manual control and freeze only when explicitly disabled",
+      "Food resource stacks have a distinct green material"
+    ],
+    "failed": []
+  },
+  "needs_live": {
+    "passed": [
+      "Hungry colonist with no food operates the garden and then eats its real output",
+      "Recovered colonist resumes food production",
+      "Tired colonist autonomously reaches the bed and recovers",
+      "Sleeping finishes and releases work-position reservation",
+      "Two colonists eat concurrently at distinct table places",
+      "Concurrent eating consumed exactly four food, without duplication",
+      "Hungry colonist withdraws food from solid storage and eats without a table"
+    ],
+    "failed": []
+  },
+  "weighted_and_registry": {
+    "weighted_matches": [
+      [
+        2,
+        2,
+        true,
+        0.0
+      ],
+      [
+        3,
+        2,
+        true,
+        1.0
+      ],
+      [
+        3,
+        3,
+        true,
+        1.4142135623730951
+      ],
+      [
+        8,
+        5,
+        true,
+        7.242640687119285
+      ],
+      [
+        10,
+        5,
+        true,
+        8.921151989096867
+      ],
+      [
+        18,
+        18,
+        true,
+        23.16582489435278
+      ],
+      [
+        0,
+        19,
+        true,
+        17.35702260395516
+      ],
+      [
+        9,
+        6,
+        true,
+        7.421151989096866
+      ],
+      [
+        9,
+        4,
+        false,
+        0.0
+      ],
+      [
+        15,
+        6,
+        true,
+        11.421151989096863
+      ],
+      [
+        19,
+        0,
+        true,
+        17.82842712474619
+      ],
+      [
+        4,
+        15,
+        true,
+        13.357022603955159
+      ]
+    ],
+    "registry": [
+      "eight independent slots",
+      "repeated refresh does not duplicate",
+      "identity lookup finds each slot",
+      "same-job registration idempotent",
+      "destroyed target removed"
+    ]
+  },
+  "final_inputs": {
+    "rotation_checks": 13,
+    "invalid_input_checks": [
+      [
+        0.0,
+        100.0,
+        "<Struct 'Vector2D' (0x000002B4F2359120) {x: 2.000000, y: 2.000000}>",
+        "rejected"
+      ],
+      [
+        -100.0,
+        100.0,
+        "<Struct 'Vector2D' (0x000002B4F23592A0) {x: 2.000000, y: 2.000000}>",
+        "rejected"
+      ],
+      [
+        100.0,
+        0.0,
+        "<Struct 'Vector2D' (0x000002B4F23592E0) {x: 2.000000, y: 2.000000}>",
+        "rejected"
+      ],
+      [
+        100.0,
+        100.0,
+        "<Struct 'Vector2D' (0x000002B4F2359320) {x: -1.000000, y: 2.000000}>",
+        "rejected"
+      ]
+    ],
+    "normal_diagonal_cost": 1.4142135623730951
+  },
+  "original_project_unchanged": true
+}

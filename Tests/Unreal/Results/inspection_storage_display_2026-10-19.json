@@ -1,0 +1,9 @@
+{
+  "passed": [
+    "Empty shelves hide their zero-quantity pile",
+    "Custom colonist names survive initialization",
+    "Inspector uses friendly job labels",
+    "Storage appears exactly once in the automatically populated building menu"
+  ],
+  "failed": []
+}
