@@ -1,0 +1,17 @@
+{
+  "passed": [
+    "Selected colonist shows name, task, cargo, stats and live needs",
+    "Construction shows separate delivered-material and labour progress",
+    "Production and output meters follow live state and show full/paused status",
+    "Storage meter and existing empty-only filter change rules are preserved",
+    "Changing selection hides irrelevant meters and retains stack counts",
+    "Progress is clamped and zero-cost targets are complete without division by zero",
+    "Only the selected object has a projected label and empty selection collapses contextual UI",
+    "Inspector refreshes do not alter colonist movement or inventory",
+    "Simulation-speed readout updates from actual game speed"
+  ],
+  "failed": [],
+  "scene": {
+    "grassInstancing": true
+  }
+}

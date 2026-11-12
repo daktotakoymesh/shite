@@ -1,0 +1,15 @@
+[
+  "BP_Road four rotations: shape, mesh, interaction and output offsets",
+  "BP_Building_Dummy2x2 four rotations: shape, mesh, interaction and output offsets",
+  "BP_ProductionStation four rotations: shape, mesh, interaction and output offsets",
+  "BP_FoodGarden four rotations: shape, mesh, interaction and output offsets",
+  "BP_FoodKitchen four rotations: shape, mesh, interaction and output offsets",
+  "BP_Bed four rotations: shape, mesh, interaction and output offsets",
+  "BP_DiningTable four rotations: shape, mesh, interaction and output offsets",
+  "BP_Stockpile four rotations: shape, mesh, interaction and output offsets",
+  "BP_Wall four rotations: shape, mesh, interaction and output offsets",
+  "No-ghost rotation safe",
+  "Orientation persists across new placement",
+  "Rotated edge validation",
+  "Wall construction and path detour"
+]
